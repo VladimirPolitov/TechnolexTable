@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-wrapper blue darken-2">
+        <a href="" class="brand-logo">Logo</a>
+        <a href="" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a onclick="incCounterPagination(0)">ПС</a></li>
+            <li><a onclick="incCounterPagination(9)">ПУ</a></li>
+            <li><a onclick="incCounterPagination(18)">РМУ</a></li>
+            <li><a onclick="incCounterPagination(27)">ЗиС</a></li>
+            <li><a onclick="incCounterPagination(27)">ПКО</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="table">
+    <div class="table-navbar">
+        <div class="table-navbar__grand">
+            <div class="input-field inline table-navbar__date">
+                <input id="text_inline_treaty" type="number" class="table-navbar__date">
+                <label for="text_inline_treaty">ДОГОВОР №<i class="material-icons right">find_in_page</i></label>
+            </div>
+            <div class="input-field inline table-navbar__date">
+                <input id="text_inline_create" type="text" class="table-navbar__date datepicker" placeholder="ДАТА ОТКРЫТИЯ">
+<!--                <label for="text_inline_create">ДАТА СОЗДАНИЯ<i class="material-icons right">date_range</i></label>-->
+            </div>
+            <div class="input-field inline table-navbar__date">
+                <input id="text_inline_finished" type="text" class="table-navbar__date datepicker">
+                <label for="text_inline_finished">ДАТА ЗАКРЫТИЯ<i class="material-icons right">date_range</i></label>
+            </div>
+            <div class="table-navbar__name waves-effect">Сумма по актам</div>
+            <div class="table-navbar__name waves-effect">Выручка</div>
+            <div class="table-navbar__name accord-top waves-effect">Себестоимость<i class="material-icons right">list</i></div>
+            <div class="table-navbar__name accord ">Условно постоянные расходы</div>
+            <div class="table-navbar__name accord ">Условно переменные расходы</div>
+            <div class="table-navbar__name accord ">Условно постоянные расходы</div>
+            <div class="table-navbar__name accord ">Условно переменные расходы</div>
+            <div class="table-navbar__name accord ">Материалы</div>
+            <div class="table-navbar__name accord ">Услуги сторонних организаций</div>
+            <div class="table-navbar__name accord ">Командировочные расходы</div>
+            <div class="table-navbar__name ">Маржа</div>
+            <div class="table-navbar__name ">Накладные расходы</div>
+            <div class="table-navbar__name ">Ком. упр. расходы</div>
+            <div class="table-navbar__name ">Валовая прибыль</div>
+            <div class="table-navbar__name ">Премия менеджеров</div>
+            <div class="table-navbar__name ">Премия ПУ</div>
+            <div class="table-navbar__name ">Прибыль</div>
+            <div class="table-navbar__name ">Чистая прибыль</div>
+        </div>
+    </div>
+    <div class="table-string"></div>
+</div>
+
+<script type="text/javascript" src="js/materialize.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
+
