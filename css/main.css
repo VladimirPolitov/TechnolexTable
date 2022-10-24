@@ -14,9 +14,12 @@
 }
 .table-string {
     display: flex;
+    flex-wrap: nowrap;
+    overflow-y: visible;
+    overflow-x: scroll;
     /*border: solid orange;*/
-    width: 75%;
-    height: 100%;
+    width: 85%;
+    height: auto;
     margin-left: 3.5%;
 }
 .table-navbar__grand {
@@ -38,6 +41,7 @@
 }
 .table-column {
     width: 160px;
+    flex: 0 0 auto;
     /*border: solid black;*/
 }
 .table-column__data {
