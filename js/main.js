@@ -546,15 +546,15 @@ for (let i = 0; i < acc.length; i++) {
     }
 }
 
-function sortDateOfCreate () {
+function sortDateOfCreate() {
     let datable = new Date(arrayOfTreaty[0].dateOfCreate)
     console.log(datable.getTime())
 }
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let elems = document.querySelectorAll('.datepicker');
     let instances = M.Datepicker.init(elems);
-    console.log(document.getElementById(modal-e631d24c-f94c-5199-3877-f80719645dcf).value)
+    console.log(document.getElementById(modal - e631d24c - f94c - 5199 - 3877 - f80719645dcf).value)
 });
 
 

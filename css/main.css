@@ -30,6 +30,7 @@
     color: whitesmoke;
     width: 100%;
     height: 50px;
+    font-size: 15px;
     text-align: center;
     text-transform: uppercase;
     margin-top: 5px;
@@ -48,22 +49,11 @@
     width: 80%;
     height: 49px;
     text-align: center;
+    font-size: 15px;
     margin-top: 6px;
     line-height: 34px;
     border-bottom: groove;
     border-width: thin;
-}
-.table-navbar__name.accord-top.active,
-.table-navbar__name.accord-top:hover {
-    background-color: #0d47a1;
-}
-.table-navbar__name.accord,
-.table-column__data.accord{
-    display: none;
-}
-.table-navbar__name.accord.show,
-.table-column__data.accord.show{
-    display: block;
 }
 .table-navbar__date {
     /*border: solid #fbc02d;*/
@@ -71,4 +61,33 @@
     margin-top: 0;
     margin-bottom: -10px;
 }
+.table-navbar__name.accord-top.active,
+.table-navbar__name.accord-top:hover {
+    background-color: #0d47a1;
+}
+.table-navbar__name.accord,
+.table-column__data.accord{
+    font-size: 0;
+    color: rgba(245, 245, 245, 0);
+    border: none;
+    margin: 0;
+    height: 0;
+    transition: height 1s ease-in-out, font-size 2s ease-in, color 0.8s ease-in-out, margin-top 1s;
+}
+.table-navbar__name.accord.show,
+.table-column__data.accord.show{
+    font-size: 15px;
+    border-bottom: groove;
+    border-width: thin;
+    margin-top: 6px;
+    height: 49px;
+    transition: height 1s ease-in-out, font-size 0.6s, color 1.6s ease-in-out;
+}
+.table-column__data.accord.show{
+    color: rgba(0, 0, 0, 100);
+}
+.table-navbar__name.accord.show{
+    color: rgba(245, 245, 245, 100);
+}
+
 
