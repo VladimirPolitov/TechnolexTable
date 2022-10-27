@@ -49,7 +49,7 @@
     width: 80%;
     height: 49px;
     text-align: center;
-    font-size: 15px;
+    font-size: 14px;
     margin-top: 6px;
     line-height: 34px;
     border-bottom: groove;
@@ -76,7 +76,7 @@
 }
 .table-navbar__name.accord.show,
 .table-column__data.accord.show{
-    font-size: 15px;
+    font-size: 14px;
     border-bottom: groove;
     border-width: thin;
     margin-top: 6px;
@@ -89,5 +89,14 @@
 .table-navbar__name.accord.show{
     color: rgba(245, 245, 245, 100);
 }
+input:focus {
+    border-bottom: 1px solid #1976d2 !important;
+    box-shadow: 0 0.2px 0 0 #1976d2 !important;
+}
+label.active {
+    color: #1976d2 !important;
+}
+
+
 
 

@@ -546,15 +546,65 @@ for (let i = 0; i < acc.length; i++) {
     }
 }
 
-function sortDateOfCreate() {
-    let datable = new Date(arrayOfTreaty[0].dateOfCreate)
-    console.log(datable.getTime())
-}
 
 document.addEventListener('DOMContentLoaded', function () {
     let elems = document.querySelectorAll('.datepicker');
-    let instances = M.Datepicker.init(elems);
-    console.log(document.getElementById(modal - e631d24c - f94c - 5199 - 3877 - f80719645dcf).value)
+    let instances = M.Datepicker.init(elems,
+        {
+            format: 'dd.mm.yyyy',
+            firstDay: 1,
+            i18n: {
+                cancel: 'Отмена',
+                months: [
+                    'Январь',
+                    'Февраль',
+                    'Март',
+                    'Апрель',
+                    'Май',
+                    'Июнь',
+                    'Июль',
+                    'Август',
+                    'Сентябрь',
+                    'Октябрь',
+                    'Ноябрь',
+                    'Декабрь'
+                ],
+                monthsShort: [
+                    'Янв',
+                    'Фев',
+                    'Мар',
+                    'Апр',
+                    'Май',
+                    'Инь',
+                    'Иль',
+                    'Авг',
+                    'Сен',
+                    'Окт',
+                    'Ноя',
+                    'Дек'
+                ],
+                weekdays: [
+                    'Воскресенье',
+                    'Понедельник',
+                    'Вторник',
+                    'Среда',
+                    'Четверг',
+                    'Пятница',
+                    'Суббота'
+                ],
+                weekdaysShort: [
+                    'Вс',
+                    'Пн',
+                    'Вт',
+                    'Ср',
+                    'Чт',
+                    'Пт',
+                    'Сб'
+                ],
+                weekdaysAbbrev:	['Вс','Пн','Вт','Ср','Чт','Пт','Сб']
+            }
+
+        });
 });
 
 
